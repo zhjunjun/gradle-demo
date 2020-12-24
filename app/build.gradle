@@ -1,0 +1,20 @@
+plugins {
+    // 自定义插件使用(通常用来配置通用配置使用)
+    id 'myproject.java-conventions'
+    // 这个插件是官方插件,用来表明这个模块是一个application,而不是一个lib
+    id 'application'
+}
+
+dependencies {
+    // 本地模块依赖web
+    implementation project(':web')
+    // 本地模块依赖list
+    implementation project(':list')
+    // 其他包依赖，比如junit,spring...
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// 官方插件需要的参数，指定启动类
+application {
+    mainClass = "com.example.App"
+}
