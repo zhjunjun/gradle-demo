@@ -1,4 +1,4 @@
-# Gradle构建的一个多模块Java脚手架
+# Gradle构建的一个多模块Java项目脚手架
 
 - java:      1.8.0_251"
 - Gradle:    6.5.1
