@@ -1,3 +1,10 @@
+# Gradle构建的一个多模块Java脚手架
+
+- java:      1.8.0_251"
+- Gradle:    6.5.1
+- Kotlin:    1.3.72
+- Groovy:    2.5.11
+
 ### 查看项目结构
 ```$xslt
 ➜  gradle_demo git:(main) ✗ gradle projects
@@ -102,3 +109,9 @@ BUILD SUCCESSFUL in 956ms
 6 actionable tasks: 1 executed, 5 up-to-date
 
 ```
+
+> 参考
+
+- https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html
+- https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html
+- https://docs.gradle.org/current/samples/sample_convention_plugins.html
